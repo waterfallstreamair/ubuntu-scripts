@@ -1,9 +1,13 @@
 cd /var
-zip -r aws-ec2-instance1.zip "
-www 
-/root/.ssh 
-/root/.vnc
-/root/Downloads
-/root/Desktop
-/root/Pictures
-"
+
+zip -r ~/user-data.zip \
+www \
+/root/.ssh \
+~/.vnc \
+~/Downloads \
+~/Desktop \
+~/Pictures \
+~/.profile \
+~/.config/xfce4
+
+mv ~/user-data.zip www
