@@ -1,0 +1,1 @@
+git diff --no-index dir1 dir2
