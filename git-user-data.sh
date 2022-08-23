@@ -1,6 +1,7 @@
 cd /var/www/backups/aws-ec2-instance-1
 
 #cp -r /var/www/scripts www
+cp -r /var/www/companies www
 cp -r /root/.ssh root
 cp -r ~/.vnc home
 cp -r ~/Downloads home
