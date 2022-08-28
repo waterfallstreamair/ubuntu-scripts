@@ -14,17 +14,17 @@
 ###############################################################################
 
 # Remove apt / apt-get files
-sudo apt clean -y
-sudo apt -s clean -y
-sudo apt clean all -y
-sudo apt autoremove -y
-sudo apt-get clean -y
-sudo apt-get -s clean -y
-sudo apt-get clean all -y
-sudo apt-get autoclean -y
+apt clean -y
+apt -s clean -y
+apt clean all -y
+apt autoremove -y
+apt-get clean -y
+apt-get -s clean -y
+apt-get clean all -y
+apt-get autoclean -y
 
 #Remove Old Log Files
-sudo rm -f /var/log/*gz
+rm -f /var/log/*gz
 
 # Remove Thumbnail Cache
 rm -rf ~/.cache/thumbnails/*
