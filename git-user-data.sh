@@ -14,4 +14,4 @@ cp -r ~/.config/xfce4 home/.config
 
 git add .
 git commit -m "Add backup."
-git push origin main
+git push
