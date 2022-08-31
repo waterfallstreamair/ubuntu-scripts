@@ -12,6 +12,7 @@ const daily = async () => {
         git add .
         git commit -m "Update scripts."
         git push
+        cd scripts
         sh git-user-data.sh
     `)
     
