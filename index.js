@@ -4,6 +4,8 @@ const daily = async () => {
    
     shell.exec(`
         echo hello
+        echo Date/Time:
+        echo 'date +%y%m%d-%H_%M_%S'
         pwd
         cd "/var/www/scripts"
         pwd
@@ -17,5 +19,5 @@ const daily = async () => {
 }
 
 (async () => {
-    setInterval(daily, 10000)
+    setInterval(daily, 1000 * 60)
 })()
