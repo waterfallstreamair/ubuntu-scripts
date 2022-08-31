@@ -1,11 +1,11 @@
 import shell from 'shelljs'
 
 const daily = async () => {
-   
+    shell.echo()
     shell.exec(`
         echo hello
         echo Date/Time:
-        echo 'date +%y%m%d-%H_%M_%S'
+        echo date +%y%m%d-%H_%M_%S
         pwd
         cd "/var/www/scripts"
         pwd
@@ -19,5 +19,5 @@ const daily = async () => {
 }
 
 (async () => {
-    setInterval(daily, 1000 * 60)
+    setInterval(daily, 1000 * 3)
 })()
