@@ -8,6 +8,7 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "moment": "^2.29.4",
     "shelljs": "^0.8.5"
   },
   "devDependencies": {

@@ -1,13 +1,13 @@
 import shell from 'shelljs'
+import moment from 'moment'
 
 const daily = async () => {
-    shell.echo()
+    const dt = moment().format()
     shell.exec(`
         echo hello
-        echo Date/Time:
-        echo date +%y%m%d-%H_%M_%S
+        echo Date/Time: ${dt}
         pwd
-        cd "/var/www/scripts"
+        cd "/var/www/ubuntu-scripts"
         pwd
         git add .
         git commit -m "Update scripts."
