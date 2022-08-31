@@ -1,7 +1,7 @@
 import shell from 'shelljs'
 import moment from 'moment'
 
-const daily = async () => {
+const interval = async () => {
     const dt = moment().format()
     shell.exec(`
         echo hello
@@ -15,10 +15,9 @@ const daily = async () => {
         cd scripts
         sh git-user-data.sh
     `)
-    
-    shell.exec('echo Waiting 3 seconds...')
+    shell.exec('echo Waiting for 1 hour...')
 }
 
 (async () => {
-    setInterval(daily, 1000 * 3)
+    setInterval(interval, 1000 * 60 * 60)
 })()
