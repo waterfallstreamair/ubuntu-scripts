@@ -15,7 +15,6 @@ const interval = async () => {
         cd scripts
         sh git-user-data.sh
         sh cleanup.sh
-        sh docker-cleanup.sh
     `)
     shell.exec('echo Waiting for 1 hour...')
 }
