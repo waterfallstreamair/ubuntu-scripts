@@ -22,5 +22,5 @@ const interval = async () => {
 
 (async () => {
     interval()
-    setInterval(interval, 1000 * 10)
+    setInterval(interval, 1000 * 60 * 60)
 })()
