@@ -13,6 +13,7 @@ const interval = async () => {
         git commit -m "Update scripts."
         git push
         cd scripts
+        pwd
         sh git-user-data.sh
         sh cleanup.sh
     `)
