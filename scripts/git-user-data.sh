@@ -12,6 +12,6 @@ cp /root/.profile root
 cp /root/.bashrc root
 cp -r ~/.config/xfce4 home/.config
 
-git add .
-git commit -m "Add backup."
-git push
+#git add .
+#git commit -m "Add backup."
+#git push
