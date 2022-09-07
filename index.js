@@ -31,6 +31,7 @@ const interval = async () => {
         git commit -m "Update Backups: ${await getCachedFiles('/var/www/backups')}."
         git push
         
+        
         sh cleanup.sh
     `)
     shell.exec('echo "Waiting for 1 hour..."')
