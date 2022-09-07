@@ -14,24 +14,23 @@ const interval = async () => {
     shell.exec(`
         echo hello
         echo Date/Time: ${dt}
-        pwd
-        
+    `)
+    shell.exec(`
         cd "/var/www/ubuntu-scripts"
-        pwd
+        
         git add .
         git commit -m "Update Scripts: ${await getCachedFiles('/var/www/ubuntu-scripts')}."
         git push
         
         cd /var/www/ubuntu-scripts/scripts
-        pwd
+        
         sh git-user-data.sh
         cd /var/www/backups
-        pwd
+        
         git add .
         git commit -m "Update Backups: ${await getCachedFiles('/var/www/backups')}."
         git push
         
-        pwd
         sh cleanup.sh
     `)
     shell.exec('echo "Waiting for 1 hour..."')
