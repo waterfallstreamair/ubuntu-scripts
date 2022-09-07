@@ -17,17 +17,21 @@ const interval = async () => {
     `)
     shell.exec(`
         cd "/var/www/ubuntu-scripts"
-        
         git add .
-        git commit -m "Update Scripts: ${await getCachedFiles('/var/www/ubuntu-scripts')}."
+    `)
+    const scriptsFiles = await getCachedFiles('/var/www/ubuntu-scripts')
+    shell.exec(`
+        cd "/var/www/ubuntu-scripts"
+        git commit -m "Update Scripts: ${scriptsFiles}."
         git push
         
         cd /var/www/ubuntu-scripts/scripts
-        
         sh git-user-data.sh
-        cd /var/www/backups
         
+        cd /var/www/backups
         git add .
+    `)
+    shell.exec(`
         git commit -m "Update Backups: ${await getCachedFiles('/var/www/backups')}."
         git push
         
