@@ -31,10 +31,11 @@ const interval = async () => {
         cd /var/www/backups
         git add .
     `)
+    const backupsFiles = await getCachedFiles('/var/www/backups')
     shell.exec(`
-        git commit -m "Update Backups: ${await getCachedFiles('/var/www/backups')}."
+        cd /var/www/backups
+        git commit -m "Update Backups: ${backupsFiles}."
         git push
-        
         
         sh cleanup.sh
     `)
