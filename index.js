@@ -50,10 +50,10 @@ const interval = async () => {
         sh cleanup.sh
     `)
    
-    shell.exec('echo "Waiting for 1 hour..."')
+    shell.exec('echo "Waiting for 3 hour..."')
 }
 
 (async () => {
     interval()
-    //setInterval(interval, 1000 * 60 * 60)
+    setInterval(interval, 1000 * 60 * 60 * 3)
 })()
