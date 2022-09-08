@@ -29,7 +29,8 @@ const interval = async () => {
         git push
     `)
     
-    /*shell.exec(`
+    /*
+    shell.exec(`
         cd /var/www/ubuntu-scripts/scripts
         sh git-user-data.sh
         cd /var/www/backups
