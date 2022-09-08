@@ -50,7 +50,7 @@ const interval = async () => {
         sh cleanup.sh
     `)
    
-    shell.exec('echo "Waiting for 3 hour..."')
+    shell.exec('echo "Waiting for 3 hours..."')
 }
 
 (async () => {
