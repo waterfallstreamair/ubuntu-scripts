@@ -17,7 +17,10 @@ const interval = async () => {
     `)
     shell.exec(`
         cd "/var/www/ubuntu-scripts"
+        pwd
+        git status
         git add .
+        git status
     `)
     const scriptsFiles = await getCachedFiles('/var/www/ubuntu-scripts')
     shell.exec(`
