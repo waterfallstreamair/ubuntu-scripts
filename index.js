@@ -46,6 +46,7 @@ const interval = async () => {
     `)
    
     shell.exec(`
+        cd /var/www/ubuntu-scripts/scripts
         sh cleanup.sh
     `)
    
