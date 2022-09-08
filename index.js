@@ -28,7 +28,8 @@ const interval = async () => {
         git commit -m "Update Scripts: ${scriptsFiles}."
         git push
     `)
-    shell.exec(`
+    
+    /*shell.exec(`
         cd /var/www/ubuntu-scripts/scripts
         sh git-user-data.sh
         cd /var/www/backups
@@ -39,10 +40,11 @@ const interval = async () => {
         cd /var/www/backups
         git commit -m "Update Backups: ${backupsFiles}."
         git push
-    `)
+    `)*/
+    /*
     shell.exec(`
         sh cleanup.sh
-    `)
+    `)*/
     shell.exec('echo "Waiting for 1 hour..."')
 }
 
