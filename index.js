@@ -24,11 +24,13 @@ const interval = async () => {
     `)
     const scriptsFiles = await getCachedFiles('/var/www/ubuntu-scripts')
     console.log({ scriptsFiles })
+    
     shell.exec(`
         cd "/var/www/ubuntu-scripts"
         git commit -m "Update Scripts: ${scriptsFiles}."
         git push
     `)
+    
     
     /*
     shell.exec(`
