@@ -35,7 +35,9 @@ const interval = async () => {
         cd /var/www/ubuntu-scripts/scripts
         sh git-user-data.sh
         cd /var/www/backups
+        git status
         git add .
+        git status
     `)
     const backupsFiles = await getCachedFiles('/var/www/backups')
     shell.exec(`
