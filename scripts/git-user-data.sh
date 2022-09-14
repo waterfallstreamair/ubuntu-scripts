@@ -6,9 +6,7 @@ cp -r /var/www/companies www
 
 cp -r /root/.ssh root
 cp -r /root/.vnc root
-cp -r root/Downloads root
-cp -r root/Desktop root
-cp -r root/Pictures root
+
 cp /root/.profile root
 cp /root/.bashrc root
 
@@ -18,6 +16,10 @@ cp -r ~/Downloads home
 cp -r ~/Desktop home
 cp -r ~/Pictures home
 cp -r ~/.config/xfce4 home/.config
+
+cp -r root/Downloads root
+cp -r root/Desktop root
+cp -r root/Pictures root
 
 #git add .
 #git commit -m "Add backup."
