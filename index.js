@@ -51,10 +51,11 @@ const interval = async () => {
         sh cleanup.sh
     `)
    
-    shell.exec('echo "Waiting for 3 hours..."')
+    //shell.exec('echo "Waiting for 3 hours..."')
+    shell.exec('echo "Exit..."')
 }
 
 (async () => {
     interval()
-    setInterval(interval, 1000 * 60 * 60 * 3)
+    //setInterval(interval, 1000 * 60 * 60 * 3)
 })()
